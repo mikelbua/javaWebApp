@@ -1,0 +1,160 @@
+/*
+hoja de estilos 
+
+esto es un comentario de bloque.
+@author : Mikel bua 
+@version: 1.0
+@tags: css, basic,etc..
+@licencia: mit
+*/
+
+/*ORDEN DEL CSS
+1-reset.
+2-@keyframes.
+3-TODAS las etiquetas estilos generales.
+4-Layouts
+5-clases
+6-ID Cosas mas especificas
+*/
+
+* {
+    /*Esto es un reseteo para eliminar todos los margin y padding por defecto : user-agent*/
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1 {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+button {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial,sans-serif;
+    /*background-image: url(/images/office.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/helloweb /images/book.jpg");
+    position: relative;
+}
+
+nav {
+
+  background-image: url("/pruebatecnica/images/menuEnlacesfondo.jpg");
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid black;
+}
+ nav a{
+    border-right: 2px solid  white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    color: aqua;
+    font-size: 14px;
+ }
+ nav a:hover{
+    font-size: 15px;
+ }
+
+ form{
+     border: 1px solid grey;
+     padding: 10px;
+ }
+            
+
+#imagelogin {
+    width: 50%;
+    height: 100%;
+    background-image: url("/helloweb/images/book4.jpg");
+    display: inline;
+    background-size: cover;
+    }
+#login {
+    width: 850px;
+    height: 400px;
+    background-color: blanchedalmond;
+    position: absolute;
+   left: 300px;
+    top: 170px;
+    display: flex;
+}
+#fomulogin {
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 100%;
+    font-family: monospace;
+}
+fieldset {
+    padding: 20px;
+}
+form {
+height: 100%;
+box-sizing: border-box;
+padding: 70px 20px 0;
+}
+
+.botonenviar {
+    box-shadow: 0 1px 0 0 #fff6af;
+    background: linear-gradient(to bottom, #ffef85 5%, #f5cc8b 100%);
+    background-color: #ffef85;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #524f52;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+	padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ebdb63;
+}
+.botonenviar:hover {
+    background: linear-gradient(to bottom, #f5cc8b 5%, #ffef85 100%);
+    background-color: #f5cc8b;
+}
+.botonenviar:active {
+    position: relative;
+    top: 1px;
+}
+
+input[type="text"] {
+    width: 158px;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: double;
+    border-radius: 18px;
+    box-shadow: 0 0 5px rgba(66,66,66,.75);
+    text-shadow: 0 0 5px rgba(66,66,66,.0);
+}
+input[type="password"] {
+    width: 130px;
+    padding: 5px;
+	font-size: 16px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #FFFFFF;
+	color: #000000;
+	border-style: double;
+	border-radius: 18px;
+	box-shadow: 0 0 5px rgba(66,66,66,.75);
+	text-shadow: 0 0 5px rgba(66,66,66,.0);
+}
