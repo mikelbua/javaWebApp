@@ -22,8 +22,24 @@ esto es un comentario de bloque.
     margin: 0;
     padding: 0;
 }
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+        border-radius: 128px;
+    }
+}
 
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
 
+}
 
 h1 {
     color: black;
@@ -31,6 +47,15 @@ h1 {
     text-align: center;
 }
 
+.parallax h1 {
+    padding-top: 2em;
+}
+
+.parallax h2 {
+    padding-top: 0.5em;
+    font-size: 2em;
+    align-content: center;
+}
 
 button {
     margin-top: 1em;
@@ -44,8 +69,92 @@ body {
     /*background-image: url(/images/office.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/helloweb /images/book.jpg");
-    position: relative;
+}
+.parallax {
+    /* The image used */
+    background-image: url("/pruebatecnica/images/fondoParadax.jpg");
+    /* Set a specific height */
+    min-height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.texto {
+    height: 1000px;
+    background-color: rgb(190, 111, 111);
+    font-size: 36px;
+}
+.voluntario {
+    color: white;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+}
+td,
+th {
+    border: 1px solid #000;
+    /* shorthand (abrebiatura) de*/
+    /*
+    border-width: 1px;
+    border: solid;
+    border-color:#000 ;
+    */
+    padding: 5px;
+    text-align: center;
+}
+
+tr.d0 td {
+    background-color: #CC9999;
+    color: black;
+}
+tr.d1 td {
+    background-color: #9999CC;
+    color: black;
+}
+
+th {
+    background-color: rgb(91, 93, 95);
+}
+
+td:hover {
+
+    background-color: rgb(11, 167, 11);
+}
+
+a {
+    color: black;
+}
+
+code {
+    font-family: monospace;
+    color: rgb(207, 7, 90);
+    background-color: rgb(216, 231, 131);
+}
+p{
+  margin: 5px 0px;
+}
+.container p {
+    /*Esto es un selector descendente ,afecta a todos los parrafos <p> dentro de un div.container*/
+    color: orangered;
+}
+.container p span {
+    /*Todos los span qeu esten dentro de un parrafo que a su vez esten dentro de div.container*/
+    color: #000;
+}
+
+p .especial {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p.especias {
+    /*selecciona unicamente los PARRAFOS de CLASS ESPECIAL. no es descendente*/
+    color: purple;
+    background-color: rgb(216, 231, 131);
 }
 
 nav {
@@ -74,87 +183,3 @@ nav {
      border: 1px solid grey;
      padding: 10px;
  }
-            
-
-#imagelogin {
-    width: 50%;
-    height: 100%;
-    background-image: url("/helloweb/images/book4.jpg");
-    display: inline;
-    background-size: cover;
-    }
-#login {
-    width: 850px;
-    height: 400px;
-    background-color: blanchedalmond;
-    position: absolute;
-   left: 300px;
-    top: 170px;
-    display: flex;
-}
-#fomulogin {
-    background-color: blanchedalmond;
-    width: 50%;
-    height: 100%;
-    font-family: monospace;
-}
-fieldset {
-    padding: 20px;
-}
-form {
-height: 100%;
-box-sizing: border-box;
-padding: 70px 20px 0;
-}
-
-.botonenviar {
-    box-shadow: 0 1px 0 0 #fff6af;
-    background: linear-gradient(to bottom, #ffef85 5%, #f5cc8b 100%);
-    background-color: #ffef85;
-    border-radius: 6px;
-    border: 1px solid #ffaa22;
-    display: inline-block;
-    cursor: pointer;
-    color: #524f52;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-	padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #ebdb63;
-}
-.botonenviar:hover {
-    background: linear-gradient(to bottom, #f5cc8b 5%, #ffef85 100%);
-    background-color: #f5cc8b;
-}
-.botonenviar:active {
-    position: relative;
-    top: 1px;
-}
-
-input[type="text"] {
-    width: 158px;
-    padding: 5px;
-    font-size: 16px;
-    border-width: 1px;
-    border-color: #CCCCCC;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-style: double;
-    border-radius: 18px;
-    box-shadow: 0 0 5px rgba(66,66,66,.75);
-    text-shadow: 0 0 5px rgba(66,66,66,.0);
-}
-input[type="password"] {
-    width: 130px;
-    padding: 5px;
-	font-size: 16px;
-	border-width: 1px;
-	border-color: #CCCCCC;
-	background-color: #FFFFFF;
-	color: #000000;
-	border-style: double;
-	border-radius: 18px;
-	box-shadow: 0 0 5px rgba(66,66,66,.75);
-	text-shadow: 0 0 5px rgba(66,66,66,.0);
-}
