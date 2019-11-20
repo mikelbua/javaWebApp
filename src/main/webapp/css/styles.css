@@ -11,17 +11,16 @@ esto es un comentario de bloque.
 /*ORDEN DEL CSS
 1-reset.
 2-@keyframes.
-3-TODAS las etiquetas estilos generales.
+3-TODAS las etiquetas estilos generales. - normalize
 4-Layouts
 5-clases
 6-ID Cosas mas especificas
 */
 
-* {
-    /*Esto es un reseteo para eliminar todos los margin y padding por defecto : user-agent*/
-    margin: 0;
-    padding: 0;
-}
+@import url("reset.css");
+@import url("impresora.css") print;
+@import url("normalize.css");
+
 @keyframes example {
     from {
         background-color: red;
@@ -72,7 +71,7 @@ body {
 }
 .parallax {
     /* The image used */
-    background-image: url("/pruebatecnica/images/fondoParadax.jpg");
+    background-image: url("/helloweb/images/fondoParadax.jpg");
     /* Set a specific height */
     min-height: 400px;
     /* Create the parallax scrolling effect */
@@ -158,12 +157,12 @@ p.especias {
 }
 
 nav {
-
-  background-image: url("/pruebatecnica/images/menuEnlacesfondo.jpg");
+  background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
   border: solid black;
+  display:flex;
 }
  nav a{
     border-right: 2px solid  white;
