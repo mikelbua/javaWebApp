@@ -15,11 +15,23 @@ esto es un comentario de bloque.
 4-Layouts
 5-clases
 6-ID Cosas mas especificas
+7-font awesome
 */
-
 @import url("reset.css");
-@import url("impresora.css") print;
+
 @import url("normalize.css");
+
+@import url("etiquetas.css");
+
+@import url("animaciones.css");
+
+@import url("layouts.css");
+
+@import url("clases.css");
+
+@import url("custom.css");
+
+@import url("impresora.css") print;
 
 @keyframes example {
     from {
@@ -36,149 +48,216 @@ esto es un comentario de bloque.
     height: 100px;
     background-color: red;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  animation-direction: alternate;
 
+}
+
+}
+body {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main {
+	margin-bottom: 50%;
+	max-width: 1024px;
+	margin: auto;
+	margin: 3px auto 60px;
+}
+
+.nav-wraper {
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* left: 0; */
+	width: 100%;
+	position: sticky;
+}
+
+nav {
+	/* display: flex; */
+	font-weight: bold;
+	max-width: 1024px;
+	margin: auto;
+}
+
+.footer-wraper {
+	width: 100%;
+	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
+	position: fixed;
+	bottom: 0;
+}
+
+footer {
+	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
+	max-width: 1024px;
+	margin: auto;
+	color: white;
+}
+
+nav a {
+	border-right: 2px solid white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 10px;
+	color: aqua;
+	font-size: 14px;
+	max-width: 1024px;
+	margin: auto;
+}
+
+nav a:hover {
+	font-size: 15px;
 }
 
 h1 {
-    color: black;
-    font-size: 3em;
-    text-align: center;
+	color: black;
+	font-size: 3em;
+	text-align: center;
+}
+
+ol, ul, dl {
+	padding-left: 60px;
+	margin-top: 20px;
+}
+
+ol li {
+	list-style-type: circle;
+	line-height: 45px;
+}
+
+ul li {
+	list-style-type: circle;
 }
 
 .parallax h1 {
-    padding-top: 2em;
+	padding-top: 2em;
 }
 
 .parallax h2 {
-    padding-top: 0.5em;
-    font-size: 2em;
-    align-content: center;
+	padding-top: 0.5em;
+	font-size: 2em;
+	align-content: center;
 }
 
 button {
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
 }
 
-body {
-    font-size: 16px;
-    font-family: Arial,sans-serif;
-    /*background-image: url(/images/office.jpg);*/
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .parallax {
-    /* The image used */
-    background-image: url("/helloweb/images/fondoParadax.jpg");
-    /* Set a specific height */
-    min-height: 400px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url(/helloweb/images/fondoParadax.jpg);
+	min-height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 div.texto {
-    height: 1000px;
-    background-color: rgb(190, 111, 111);
-    font-size: 36px;
+	background-color: #d4d4d4;
+	font-size: 36px;
+	padding: 15px;
+}
+
 }
 .voluntario {
-    color: white;
+	color: white;
 }
 
 table {
-    width: 50%;
-    margin: auto;
+	width: 50%;
+	margin: auto;
 }
-td,
-th {
-    border: 1px solid #000;
-    /* shorthand (abrebiatura) de*/
-    /*
+
+td, th {
+	border: 1px solid #000;
+	/* shorthand (abrebiatura) de*/
+	/*
     border-width: 1px;
     border: solid;
     border-color:#000 ;
     */
-    padding: 5px;
-    text-align: center;
+	padding: 5px;
+	text-align: center;
 }
 
 tr.d0 td {
-    background-color: #CC9999;
-    color: black;
+	background-color: #CC9999;
+	color: black;
 }
+
 tr.d1 td {
-    background-color: #9999CC;
-    color: black;
+	background-color: #9999CC;
+	color: black;
 }
 
 th {
-    background-color: rgb(91, 93, 95);
+	background-color: rgb(91, 93, 95);
 }
 
 td:hover {
-
-    background-color: rgb(11, 167, 11);
+	background-color: orange;
 }
 
 a {
-    color: black;
+	color: black;
 }
 
 code {
-    font-family: monospace;
-    color: rgb(207, 7, 90);
-    background-color: rgb(216, 231, 131);
+	font-family: monospace;
+	color: rgb(207, 7, 90);
+	background-color: rgb(216, 231, 131);
 }
-p{
-  margin: 5px 0px;
+
+section {
+	border: 1px solid rgb(65, 64, 64);
+	margin-bottom: 50px;
+	padding: 10px;
+	background-color: rgb(177, 169, 169);
+	border-radius: 1%;
+	-webkit-box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
 }
+
+p {
+	padding: 15px;
+	line-height: 30px;
+	text-align: justify;
+}
+
 .container p {
-    /*Esto es un selector descendente ,afecta a todos los parrafos <p> dentro de un div.container*/
-    color: orangered;
+	/*Esto es un selector descendente ,afecta a todos los parrafos <p> dentro de un div.container*/
+	color: orangered;
 }
+
 .container p span {
-    /*Todos los span qeu esten dentro de un parrafo que a su vez esten dentro de div.container*/
-    color: #000;
+	/*Todos los span qeu esten dentro de un parrafo que a su vez esten dentro de div.container*/
+	color: #000;
 }
 
 p .especial {
-    font-size: 2em;
-    font-weight: 600;
+	font-size: 2em;
+	font-weight: 600;
 }
 
 p.especias {
-    /*selecciona unicamente los PARRAFOS de CLASS ESPECIAL. no es descendente*/
-    color: purple;
-    background-color: rgb(216, 231, 131);
+	/*selecciona unicamente los PARRAFOS de CLASS ESPECIAL. no es descendente*/
+	color: purple;
+	background-color: rgb(216, 231, 131);
 }
 
-nav {
-  background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: solid black;
-  display:flex;
+form {
+	border: 1px solid grey;
+	padding: 10px;
 }
- nav a{
-    border-right: 2px solid  white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 10px;
-    color: aqua;
-    font-size: 14px;
- }
- nav a:hover{
-    font-size: 15px;
- }
-
- form{
-     border: 1px solid grey;
-     padding: 10px;
- }

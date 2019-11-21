@@ -13,8 +13,6 @@
 	/*flex-box*/
 	display: flex;
 	justify-content: center;
-	
-	
 }
 	
 	.container div {

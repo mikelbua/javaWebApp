@@ -16,7 +16,7 @@
     </canvas>
     <script src="js/game.js"></script>
     <nav>
-        <a href="index.html">Volver al index</a>
+        <a href="index.jsp">Volver al index</a>
         <a href="https://developer.mozilla.org/es/docs/Games/Workflows/Famoso_juego_2D_usando_JavaScript_puro">Tutorial</a>
     </nav>
 </body>

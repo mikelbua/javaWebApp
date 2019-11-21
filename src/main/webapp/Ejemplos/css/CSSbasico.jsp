@@ -59,7 +59,7 @@
                         <span>
                             <img
                                 class="iconotel"
-                                src="/pruebatecnica/images/w3school.png"
+                                src="images/w3school.png"
                                 alt="icono telefono">
                             <a target="_blank"
                                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro">W3cSchools.com</a>
@@ -70,7 +70,7 @@
                             <p>Enlace a una llamada de telefono.</p>
                             <img
                                 class="iconotel"
-                                src="/pruebatecnica/images/iconoTel.png"
+                                src="images/iconoTel.png"
                                 alt="icono telefono">
                             <a href="tel:+13174562564">317-456-2564 </a>
                         </span>
@@ -79,7 +79,7 @@
                         <span><p>Enlace a un email.</p>
                             <img
                                 class="iconotel"
-                                src="/pruebatecnica/images/arrobaimage.png"
+                                src="images/arrobaimage.png"
                                 alt="icono arroba">
                             <a target="_blank"
                                 href="mailto:someone@example.com">Esto es un enlace a una cuenta de email.</a>

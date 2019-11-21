@@ -1,3 +1,6 @@
+
+
+
 /*
  * Esta funcion nos dejara ver la contraseña que estamos escribiendo para saber
  * si la estamos escribiendo bien. Ademas cambiaremos el texto del boton
@@ -7,16 +10,16 @@
 // onclick="verTexto()">).
 function verTexto() {
 	console.trace('click boton ver');
-	let iContraseña = document.getElementById('contrasena');// accedemos al
+	let iContrasena = document.getElementById('contrasena');// accedemos al
 															// elemento(en este
 															// caso el boton)
 															// con
 															// id="contrasena".
 	// En este if cambiamos el type de texto a password y viceversa.
-	if (iContraseña.type == "text") {
-		iContraseña.type = "password";
+	if (iContrasena.type == "text") {
+		iContrasena.type = "password";
 	} else {
-		iContraseña.type = "text";
+		iContrasena.type = "text";
 	}
 }
 
@@ -39,3 +42,14 @@ function buscarVoluntario() {
 	} while (nombreVoluntario == "nunca");
 }
 
+
+
+
+function funcionMenuDesplegable() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

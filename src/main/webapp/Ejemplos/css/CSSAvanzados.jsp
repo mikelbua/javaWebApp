@@ -35,13 +35,6 @@
                 margin: 0 20px;
             }
         </style>
-        <nav>
-            <a href="Ejemplos/css/animaciones.html">Animaciones</a>
-            <a href="Ejemplos/css/CSSbasico.html">CSSbasico</a>
-            <a href="Ejemplos/css/CSSespecificidad.html">CSSespecificidad</a>
-            <a href="/pruebatecnica/Ejemplos/html/box-model.html">Box-model</a>
-            <a href="index.html">Volver al index</a>
-        </nav>
         <h1>Selectores Avanzados pseudoselectores</h1>
         <p>A parte de de los selectores basicos hay selectores con un poco mas de
             complegidad. En este caso veresmos esos selctores.</p>

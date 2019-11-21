@@ -1,10 +1,12 @@
-		<footer>
-		    FOTTER
-		    <a href="top"></a>
+		</main>
+			<div class="footer-wraper">
+				<footer>
+				    <p>footer</p>
+				    <a href="top"></a>
+				
+				</footer>
+			</div>
+			
 		
-		</footer>
-		
-		<!-- script-->
-	
 	</body>
 </html>
