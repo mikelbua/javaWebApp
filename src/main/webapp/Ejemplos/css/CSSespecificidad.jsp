@@ -1,10 +1,10 @@
 <%String titulo = "Prueba Imcludes";%>
 <%@ include file="/includes/cabecera.jsp" %>
-
+<%@ include file="/includes/navegacion.jsp" %>
 
 
         <style>
-            p {
+            main p {
                 /*Especificidad de 1 punto*/
                 background: crimson;
             }
@@ -32,7 +32,7 @@
                 color: rgb(19, 214, 1);
             }
             p span{
-                color: rebeccapurple;
+                color: yellow;
                 font-weight: 400;
             }
             .codigo{
@@ -41,7 +41,7 @@
         </style>
         <h1>CSS ESPECIFICIDAD</h1>
 
-        <p>El fondo de este párrafo será color carmesí por que es un parrafo simple sinclases ni id.Especificidad de 1 punto.<span>soy span un dentor de un p</span></p>
+        <p>El fondo de este párrafo será color carmesí por que es un parrafo simple sin clases ni id.Especificidad de 1 punto.<span>soy span un dentor de un p</span></p>
         <div class="par">Este div tendrá el fondo de color rosa.Por que es de la class .par .Especificidad de 10 puntos. <span>soy span un dentor de un div</span></div>
         <p class="par">El fondo de este párrafo será color marron porque es un parrafod de class par p.par . Especificidad de 11 puntos.</p>
         <p id="parr" class="par">El fondo de este párrafo será de color verde. este parrafo es de ID=parr(#parr) y class=par(.par). Especificidad de 111 puntos</p>
@@ -86,5 +86,5 @@
         
         
 
-<%@ include file="/includes/navegacion.jsp" %>
+
 <%@ include file="/includes/pie.jsp" %>

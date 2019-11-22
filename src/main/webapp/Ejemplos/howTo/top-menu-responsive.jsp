@@ -9,7 +9,7 @@
 
 	<main>
 	<div class="parallax">
-		<h1>Prueba Tecnica INDEX</h1>
+		<h1>Menu Responsive</h1>
 		<br> <br> <br> <br> <br>
 	</div>
 

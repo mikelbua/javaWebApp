@@ -130,7 +130,7 @@
                     background-color: black;
                     position: absolute;
                     color:white;
-                    bottom: -102px;
+                    bottom: -199px;
                     transition-duration: 1s;
                 }
                 .contenedor:hover .contenttexto{

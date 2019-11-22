@@ -6,14 +6,17 @@
 		<base href="/helloweb/">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/arrobaimage.png"">
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		
 		<!--  -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 		
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+		
 		<!--CSS al final le añadimos un codigo que sirve paraevitar problemos con el cache -->
 		<link rel="stylesheet" href="css/styles.css?time=<%=java.lang.System.currentTimeMillis()%>">
+		
 		<title><%=titulo %></title>
 	</head>
 	<body>

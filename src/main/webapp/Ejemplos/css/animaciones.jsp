@@ -39,8 +39,6 @@
 </span>
 
 
-
-<div class="parallax" style="border-radius: 5%;"></div>
 <!--   table#ipartek.tabla_border>tr*9>td*2   :Esto crera una tabla con el ID="ipartek" y de la class="tabla_border" de 9 filas y 2 columnas-->
 
     <!--javascrip al final del body para primero cargen los css despues el html y por ultimo javascrip-->

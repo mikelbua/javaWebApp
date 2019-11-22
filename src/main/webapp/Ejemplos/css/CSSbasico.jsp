@@ -117,17 +117,6 @@
                 enim veritatis. Maxime, blanditiis minus!</p>
         </div>
 
-        <!-- <nav> <a href="/Ejemplos/css/animaciones.html">animaciones</a> </nav> -->
-        <nav>
-            <a href="Ejemplos/css/animaciones.html">Animaciones</a>
-            <a href="/pruebatecnica/Ejemplos/html/etiquetas-basicas.html">Etiquetas basicas</a>    
-            <a href="Ejemplos/css/CSSAvanzados.html">CSSavanzado</a>
-            <a href="Ejemplos/css/CSSespecificidad.html">CSSespecificidad</a>
-            <a href="Ejemplos/html/box-model.html">Visualizacion</a>
-            <a href="/pruebatecnica/Ejemplos/html/posicionamiento.html">Posicionamiento</a>
-            <a href="https://caniuse.com/">caniuse.com</a>
-            <a href="/pruebatecnica/Ejemplos/js/game.html">Arkanoid Game</a>
-            <a href="/Pruebatecnica/pruebatecnica/index.html">Volver al index</a>
-        </nav>
+        
 
 <%@ include file="/includes/pie.jsp" %>

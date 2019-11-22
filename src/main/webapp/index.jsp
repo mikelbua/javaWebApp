@@ -1,6 +1,5 @@
 <%String titulo = "Index";%>
 <%@ include file="/includes/cabecera.jsp" %>
-
 		
         <div class="parallax">
             <h1>Prueba Tecnica INDEX</h1>
