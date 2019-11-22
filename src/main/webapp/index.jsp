@@ -7,7 +7,7 @@
         </div>
         <%@ include file="/includes/navegacion.jsp" %>
         
-        
+        <p> Cambio Commit</p>
             <div class="texto">
                 <table id="ipartek" class="tabla border">
                     <caption>Tabla Alumnos</caption>
