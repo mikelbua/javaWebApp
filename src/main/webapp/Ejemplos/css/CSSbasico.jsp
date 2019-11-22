@@ -14,15 +14,12 @@
       !importan>id>class>style*/
 
             p {
-                color: teal;
+                color: #600D00;
             }
             .textoRojo {
                 color: red;
             }
-            body{
-                padding-left: 10px;
-            }
-            h2,h3{color: white;}
+            h2,h3{color: #600D00;}
         </style>
         <h1>CSS BASICO</h1>
         <hr>

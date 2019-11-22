@@ -119,52 +119,37 @@
         </div>
         <div id="fomulogin">
                 <form action="#" method="post">
-                        <fieldset>
-                            <legend>Login</legend>
-                            <label for="nombre">Usuario :</label>
-                            <!--
+				<fieldset>
+					<legend>Login</legend>
+					<label for="nombre">Usuario :</label>
+					<!--
                             autofocus : para que el foco este ahi cada vez que recarge la pagina.
                             required : que es obligatorio.
                             patter: para expresiones regulares -->
-                            <input
-                                type="text"
-                                name="nombre"
-                                id="nombre"
-                                autofocus="autofocus"
-                                required="required"
-                                pattern=".{3,10}"
-                                placeholder="minimo 3 y 10 max">
-                            
-                                <br><br>
-                            <!--
+					<input type="text" name="nombre" id="nombre" autofocus="autofocus"
+						required="required" pattern=".{3,10}"
+						placeholder="minimo 3 y 10 max"> <br>
+					<br>
+					<!--
                             En el siguiente input utilizaremos el atributo type="password" para la contraseña.
-                            --> 
-                            <label for="contrasena">Contraseña :</label>
-                            <input
-                                type="password"
-                                name="contrasena"
-                                id="contrasena"
-                                required="required"
-                                pattern=".{5,10}"
-                                placeholder="minimo 5 y 10 max">
-                            <i class="fas fa-eye" onclick="verTexto()"></i>
-                                
-                        <br>
-                        <br>
-                        <!--
+                            -->
+					<label for="contrasena">Contraseña :</label> <input type="password"
+						name="contrasena" id="contrasena" required="required"
+						pattern=".{5,10}" placeholder="minimo 5 y 10 max"> <i
+						class="fas fa-eye" onclick="verTexto()"></i> <br> <br>
+					<!--
                         A continuacion un select box (selected > option1..option2..) te da una lista con las opciones posibles. y si
                         tiene el atributo selected aparecera chequeado por defecto
                         -->
-                        <label for="idioma">Idioma</label>
-                        <select name="idioma" id="idioma" class="idioma">
-                            <option value="eus" selected="selected">Euskera</option>
-                            <option value="es">Español</option>
-                            <option value="en" >Ingles</option>
-                        </select>
-                        <div class="select_flecha">
-                            </div>
-                    </fieldset>
-                        <br>
+					<label for="idioma">Idioma</label> <select name="idioma"
+						id="idioma" class="idioma">
+						<option value="eus" selected="selected">Euskera</option>
+						<option value="es">Español</option>
+						<option value="en">Ingles</option>
+					</select>
+					<div class="select_flecha"></div>
+				</fieldset>
+				<br>
                         <input type="checkbox" name="recuerdame" value="1" id="deportes">Recuerdame<br>
                         <br>
                         <button class="botonenviar" type="submit" value="Entrar">Entrar</button>
