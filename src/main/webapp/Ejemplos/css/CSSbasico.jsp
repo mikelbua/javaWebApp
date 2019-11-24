@@ -14,7 +14,7 @@
       !importan>id>class>style*/
 
             p {
-                color: teal;
+                color: #600D00;
             }
             .textoRojo {
                 color: red;
@@ -22,7 +22,8 @@
             body{
                 padding-left: 10px;
             }
-            h2,h3{color: white;}
+            img{width: 50px;
+            height: 50px;}
         </style>
         <h1>CSS BASICO</h1>
         <hr>

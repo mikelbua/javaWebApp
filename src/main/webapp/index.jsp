@@ -6,11 +6,13 @@
             <br><br><br><br><br>
         </div>
         <%@ include file="/includes/navegacion.jsp" %>
-        
-        <p> Cambio Commit</p>
-            <div class="texto">
+            <style>
+				main{
+					background-color: #006E5F;
+				}
+			</style>
                 <table id="ipartek" class="tabla border">
-                    <caption>Tabla Alumnos</caption>
+                    <caption><i class="fas fa-table"></i> Tabla Alumnos</caption>
                     <tr class="d0">
                         <th>Nombre</th>
                         <th>Apellido</th>
@@ -79,17 +81,15 @@
                         <td colspan="2">Ander</td>
                     </tr>
                 </table>
-            </div>
 
 
-            <div class="texto">
+            <div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic vel quidem omnis
                     consequatur ipsum quaerat ipsam ratione labore dolor molestiae sint quod, nulla
                     perspiciatis suscipit ducimus placeat commodi facilis dolore?
                 </p>
             </div>
-
             
             <!-- table#ipartek.tabla_border>tr*9>td*2 :Esto crera una tabla con el
             ID="ipartek" y de la class="tabla_border" de 9 filas y 2 columnas-->

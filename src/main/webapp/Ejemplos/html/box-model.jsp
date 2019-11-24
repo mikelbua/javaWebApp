@@ -1,4 +1,4 @@
-<%String titulo = "Prueba Imcludes";%>
+<%String titulo = "Box-Model";%>
 <%@ include file="/includes/cabecera.jsp" %>
 
 
@@ -67,7 +67,7 @@
             } 
 
         </style>
-        <h1>visualizacion</h1>
+        <h1>visualizacion Box-Model</h1>
         <section>
             <h2>Box-Model</h2>
             <p class="prueba">Toda etiqueta HTML tienen una estructura de caja</p>
@@ -89,7 +89,7 @@
                     <dd>Es un hibrido entre los anteriores atributos.</dd>
                 </dl>
                 <p>Lorem
-                    <span>ipsum dolor sit amet,</span>
+                    <span>soy un span</span>
                     consectetur adipisicing elit. Laboriosam laborum voluptates ad impedit ipsa,
                     corporis eum molestiae repellat assumenda at unde beatae dolor possimus adipisci
                     ipsum id hic ipsam accusamus.</p>
@@ -108,7 +108,7 @@
                 <div class="box" style="visibility: hidden;">2</div>
                 <div class="box">3</div>
                 
-                <p>Usando <code>Dysplay:none;</code></p>
+                <p>Usando <code>Dysplay:none;</code> qeu lo esconde y ocupa su sitio</p>
                 <div class="box">1</div>
                 <div class="box" style="display: none;">2</div>
                 <div class="box">3</div>
@@ -139,11 +139,4 @@
                 <div class="box" style="position: relative; z-index: 1;">3</div>
             </section>
         </section>
-        <nav>
-            <a href="Ejemplos/css/animaciones.html">Animaciones</a>
-            <a href="Ejemplos/css/CSSbasico.html">CSSbasico</a>
-            <a href="Ejemplos/css/CSSespecificidad.html">CSSespecificidad</a>
-            <a href="Ejemplos/css/CSSAvanzados.html">CSSavanzado</a>
-            <a href="index.html">Volver al index</a>
-        </nav>
 <%@ include file="/includes/pie.jsp" %>

@@ -36,30 +36,29 @@ esto es un comentario de bloque.
 
 @import url("mediaquery.css");
 
-@keyframes example {
-    from {
-        background-color: red;
-    }
-    to {
-        background-color: yellow;
-        border-radius: 128px;
-    }
+@
+keyframes example {from { background-color:red;
+	
 }
 
-.animation {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  animation-direction: alternate;
+to {
+	background-color: yellow;
+	border-radius: 128px;
+}
 
+}
+.animation {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 }
 body {
-	
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Quicksand', sans-serif;
@@ -68,19 +67,44 @@ body {
 main {
 	margin-bottom: 50%;
 	max-width: 1024px;
-	margin: auto;
-	margin: 3px auto 60px;
+	margin: 0 auto 90px;
+	padding-top: 10px;
+	font-family: 'Quicksand', sans-serif;
+	
 }
 
-.nav-wraper {
-	background-image:url("/helloweb/images/menuEnlacesfondo.jpg");
-	position: fixed;
-	top: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	/* left: 0; */
-	width: 100%;
-	position: sticky;
+h1 {
+	color: black;
+	font-size: 3em;
+	text-align: center;
+	color: #FF9600;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Quicksand', sans-serif;
+	color: #600D00;
+}
+
+p {
+	padding: 15px;
+	line-height: 30px;
+	text-align: justify;
+	font-family: 'Quicksand', sans-serif;
+}
+
+ol, ul, dl {
+	padding-left: 50px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+ol li {
+	list-style-type: circle;
+	line-height: 45px;
+}
+
+ul li {
+	list-style-type: circle;
 }
 
 nav {
@@ -88,21 +112,19 @@ nav {
 	font-weight: bold;
 	max-width: 1024px;
 	margin: auto;
+	font-family: 'Quicksand', sans-serif;
 }
 
-
-.footer-wraper {
-	width: 100%;
+.nav-wraper {
 	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
 	position: fixed;
-	bottom: 0;
-}
-
-footer {
-	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
-	max-width: 1024px;
-	margin: auto;
-	color: white;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* left: 0; */
+	width: 100%;
+	position: sticky;
+	z-index: 999;
 }
 
 nav a {
@@ -122,65 +144,44 @@ nav a:hover {
 	font-size: 23px;
 }
 
-h1 {
-	color: black;
-	font-size: 3em;
-	text-align: center;
-	color: #FF9600;
+footer {
+	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
+	max-width: 1024px;
+	margin: auto;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
 }
 
-ol, ul, dl {
-	padding-left: 60px;
-	margin-top: 20px;
+.footer-wraper {
+	width: 100%;
+	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
+	position: fixed;
+	bottom: 0;
 }
 
-ol li {
-	list-style-type: circle;
-	line-height: 45px;
+footer p, footer a {
+	color: white;
 }
-
-ul li {
-	list-style-type: circle;
-}
-
-.parallax h1 {
-	padding-top: 2em;
-}
-
 
 button {
 	margin-top: 1em;
 	margin-left: 1em;
 	margin-bottom: 1em;
-}
-
-.parallax {
-	background-image:url("/helloweb/images/spacefondo.jpg");
-	min-height: 400px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-div.texto {
-	background-color: #006E5F;
-	font-size: 36px;
-	padding: 15px;
-}
-
-}
-.voluntario {
-	color: white;
+	font-family: 'Quicksand', sans-serif;
 }
 
 table {
 	width: 50%;
 	margin: auto;
+	font-family: 'Quicksand', sans-serif;
+}
+
+caption {
+	padding-bottom: 10px;
+	text-align: left;
 }
 
 td, th {
-	border: 1px solid black;
 	/* shorthand (abrebiatura) de*/
 	/*
     border-width: 1px;
@@ -189,6 +190,7 @@ td, th {
     */
 	padding: 5px;
 	text-align: center;
+	padding: 15px;
 }
 
 tr.d0 td {
@@ -201,12 +203,15 @@ tr.d1 td {
 	color: black;
 }
 
+
 th {
 	background-color: #858585
 }
 
 a {
 	color: black;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
 }
 
 code {
@@ -217,19 +222,38 @@ code {
 
 section {
 	border: 1px solid rgb(65, 64, 64);
-	margin-bottom: 50px;
 	padding: 10px;
-	background-color: #006E5F;
+	background-color: #DFE0DF;
 	border-radius: 1%;
-	-webkit-box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
+	font-family: 'Quicksand', sans-serif;
 	box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
 }
 
-p {
+.parallax h1 {
+	padding-top: 2em;
+}
+
+
+
+.parallax {
+	background-image: url("/helloweb/images/spacefondo.jpg");
+	min-height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -3px;
+}
+
+div.texto {
+	background-color: #006E5F;
 	padding: 15px;
-	line-height: 30px;
-	text-align: justify;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: -3px;
+}
+
+.voluntario {
+	color: white;
 }
 
 .container p {
@@ -256,4 +280,5 @@ p.especias {
 form {
 	border: 1px solid grey;
 	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
 }

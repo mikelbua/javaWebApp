@@ -29,10 +29,9 @@
             }
             section{
                 border: 1px solid rgb(65, 64, 64);
-                margin-bottom: 50px;
                 padding: 10px;
                 background-color: rgb(177, 169, 169);
-                margin: 0 20px;
+                margin-bottom: 90px;
             }
         </style>
         <h1>Selectores Avanzados pseudoselectores</h1>
