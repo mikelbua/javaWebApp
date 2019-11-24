@@ -50,7 +50,7 @@
 
 
 
-<a href="">TOP</a>
+
 
 <!--   table#ipartek.tabla_border>tr*9>td*2   :Esto crera una tabla con el ID="ipartek" y de la class="tabla_border" de 9 filas y 2 columnas-->
 

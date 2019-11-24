@@ -19,15 +19,12 @@
             .textoRojo {
                 color: red;
             }
-<<<<<<< HEAD
             body{
                 padding-left: 10px;
             }
             img{width: 50px;
             height: 50px;}
-=======
             h2,h3{color: #600D00;}
->>>>>>> branch 'master' of https://github.com/mikelbua/javaWebApp.git
         </style>
         <h1>CSS BASICO</h1>
         <hr>

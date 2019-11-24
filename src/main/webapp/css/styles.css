@@ -107,6 +107,8 @@ ul li {
 	list-style-type: circle;
 }
 
+
+
 nav {
 	/* display: flex; */
 	font-weight: bold;
@@ -250,6 +252,11 @@ div.texto {
 	padding: 15px;
 	font-family: 'Quicksand', sans-serif;
 	margin-top: -3px;
+}
+
+.imagenicono{
+	width: 40px;
+	height: 40px;
 }
 
 .voluntario {
