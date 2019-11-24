@@ -41,21 +41,10 @@ keyframes example {from { background-color:red;
 	
 }
 
-<<<<<<< HEAD
 to {
 	background-color: yellow;
 	border-radius: 128px;
 }
-=======
-.animation {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  	animation-direction: alternate;
->>>>>>> branch 'master' of https://github.com/mikelbua/javaWebApp.git
 
 }
 .animation {
@@ -155,22 +144,11 @@ nav a:hover {
 	font-size: 23px;
 }
 
-<<<<<<< HEAD
 footer {
 	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
 	max-width: 1024px;
 	margin: auto;
 	color: white;
-=======
-h1 {
-	color: black;
-	font-size: 3em;
-	text-align: center;
-	color: #FF9600;
-	font-family: 'Quicksand', sans-serif;
-}
-h2,h3,h4,h5,h6{
->>>>>>> branch 'master' of https://github.com/mikelbua/javaWebApp.git
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -196,14 +174,11 @@ table {
 	width: 50%;
 	margin: auto;
 	font-family: 'Quicksand', sans-serif;
-<<<<<<< HEAD
 }
 
 caption {
 	padding-bottom: 10px;
 	text-align: left;
-=======
->>>>>>> branch 'master' of https://github.com/mikelbua/javaWebApp.git
 }
 
 td, th {
@@ -252,7 +227,6 @@ section {
 	border-radius: 1%;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 15px 20px 29px 0px rgba(0, 0, 0, 0.75);
-	font-family: 'Quicksand', sans-serif;
 }
 
 .parallax h1 {
@@ -274,18 +248,12 @@ section {
 div.texto {
 	background-color: #006E5F;
 	padding: 15px;
-<<<<<<< HEAD
 	font-family: 'Quicksand', sans-serif;
 	margin-top: -3px;
 }
 
 .voluntario {
 	color: white;
-=======
-	line-height: 30px;
-	text-align: justify;
-	font-family: 'Quicksand', sans-serif;
->>>>>>> branch 'master' of https://github.com/mikelbua/javaWebApp.git
 }
 
 .container p {
