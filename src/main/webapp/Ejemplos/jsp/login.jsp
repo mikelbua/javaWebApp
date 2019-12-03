@@ -4,7 +4,7 @@
 
 <h1>Login</h1>
 <%
-//recibir datos del controlador(CalculadoraController.java),puedeen ser del tipo qeu sea.
+//recibir datos del controlador(CalculadoraController.java),puedeen ser del tipo que sea.
 	String error = (String)request.getAttribute("mensaje");
 	
 	if(error!=null){

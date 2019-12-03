@@ -6,8 +6,7 @@
 	
 	String error = (String)request.getAttribute("mensaje");
 	
-	
-	
+
 	if(error!=null){
 %>
 	<p style="color:red;"> <%=error%></p>

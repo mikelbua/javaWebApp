@@ -43,17 +43,17 @@ public class CalculadoraController extends HttpServlet {
 			
 			switch (op) {
 			  case 1:
-			    resultado=num1+nume2;
-			    opera="+";
-			    break;
+				  resultado=num1+nume2;
+			      opera="+";
+			      break;
 			  case 2:
 				  resultado=num1-nume2;
 				  opera="-";
-			    break;
+				  break;
 			  case 3:
 				  resultado=num1*nume2;
 				  opera="*";
-			    break;
+				  break;
 			  case 4:
 				  if(nume2==0) {
 					  request.setAttribute("mensaje", "division entre 0 es infinito.");
@@ -62,7 +62,7 @@ public class CalculadoraController extends HttpServlet {
 				  resultado=num1/nume2;
 				  opera="/";
 				  }
-			    break;
+				  break;
 			}
 			
 			

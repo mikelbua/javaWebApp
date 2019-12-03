@@ -98,9 +98,11 @@ main {
 		molestiae sint quod, nulla perspiciatis suscipit ducimus placeat
 		commodi facilis dolore?</p>
 </div>
-<span> 
-<img class="imagenicono" src="/helloweb/images/arrowTopBlack.png" href="#top"
-	alt="icono top">
+<span>
+	<a href="#top">
+		<img class="imagenicono" src="/helloweb/images/arrowTopBlack.png"
+			alt="icono top">
+	</a>
 </span>
 <!-- table#ipartek.tabla_border>tr*9>td*2 :Esto crera una tabla con el
             ID="ipartek" y de la class="tabla_border" de 9 filas y 2 columnas-->
