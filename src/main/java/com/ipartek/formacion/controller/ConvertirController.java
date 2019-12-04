@@ -14,13 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ConvertirController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final double METROS_PIES=3.28084;
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public ConvertirController() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
