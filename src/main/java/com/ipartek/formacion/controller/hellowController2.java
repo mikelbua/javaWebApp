@@ -48,8 +48,10 @@ public class hellowController2 extends HttpServlet {
 		if (USUARIO.equals(nombre) && CONTRASENA.equals(contrasena)) {// http://localhost:8080/helloweb/ejemplo1?nombre=pepe&contrasena=123456
 			String eresMovil = "";
 			if (userAgent.contains("Mobile")) {
+
 				eresMovil = "Eres un : Movil.";
 			} else {
+
 				eresMovil = "Eres un : Navegador.";
 			}
 
@@ -62,6 +64,7 @@ public class hellowController2 extends HttpServlet {
 			request.getRequestDispatcher(VISTA_RESUMEN).forward(request, response);
 
 		} else if (TETERA.equals(nombre)) {
+			
 			// si el usuario es "soy una tetera"
 			// http://localhost:8080/helloweb/ejemplo1?nombre=soy%20una%20tetera
 
@@ -77,7 +80,6 @@ public class hellowController2 extends HttpServlet {
 
 		// Por defecto es una response code 200 (peticino correcta
 		// (response.setStatus(401);))
-
 	}
 
 	/**
