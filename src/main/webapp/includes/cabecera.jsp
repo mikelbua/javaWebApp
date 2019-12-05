@@ -20,3 +20,24 @@
 		<title><%=titulo %></title>
 	</head>
 	<body>
+	<section id="usuario" "> 	
+	<%
+    		String usuario = (String)session.getAttribute("usuarioLogeado");
+    		String idioma = (String)session.getAttribute("idioma");    	
+    		
+    		if ( usuario == null ){
+    			
+    			%>
+    				<p><a href="Ejemplos/jsp/login.jsp">inicio session</a></p>
+    			    			
+    			<%
+    		}else{
+    			%>  
+	    				<p style="display: inline;" >Usuario: <%=usuario%></p>
+	    				<p style="display: inline;">Tu idioma es: <%=idioma%></p>	
+	    				<p style="display: inline;"><a href="logout">Cerrar Sesssion</a></p>	
+    				
+    			<%
+    		}
+    	%>
+	</section>

@@ -1,43 +1,45 @@
-<a href="index.jsp">Volver</a>
+<%String titulo = "Login";%>
+<%@ include file="/includes/cabecera.jsp" %>
 
-
-
-<h1>Login</h1>
 <%
 //recibir datos del controlador(CalculadoraController.java),puedeen ser del tipo que sea.
 	String error = (String)request.getAttribute("mensaje");
 	
 	if(error!=null){
 %>
-	<p style="color:red;"> <%=error%> %></p>
+	<p style="color:red;"> <%=error%></p>
 <%} %>
 
 
-<body>
+<a href="index.jsp">Volver</a>
+<h1>Login</h1>
+
+
 	<style>
             body {
                 background-image: url("/helloweb/images/book.jpg");
                 position: relative;
             }
 
-            #imagelogin {
+            .imagelogin {
                 width: 50%;
                 height: 100%;
                 background-image: url("/helloweb/images/book4.jpg");
                 display: inline;
                 background-size: cover;
             }
-            #login {
+            .login {
                 width: 850px;
-                height: 400px;
-                background-color: blanchedalmond;
-                position: absolute;
-                left: 300px;
-                top: 170px;
-                display: flex;
+			    height: 400px;
+			    margin-top: 1rem;
+			    background-color: blanchedalmond;
+			    /* position: absolute; */
+			    /* left: 365px; */
+			    margin: 1rem auto 0;
+			    display: flex;
 
             }
-            #fomulogin {
+            .formulogin {
                 background-color: blanchedalmond;
                 width: 50%;
                 height: 100%;
@@ -50,8 +52,9 @@
                 height: 100%;
                 box-sizing: border-box;
                 padding: 70px 20px 0;
+                border:none;
             }
-
+				
             .botonenviar {
                 box-shadow: 0 1px 0 0 #fff6af;
                 background: linear-gradient(to bottom, #ffef85 5%, #f5cc8b 100%);
@@ -104,10 +107,10 @@
                 text-shadow: 0 0 5px rgba(66,66,66,.0);
             }
         </style>
-    <div id="login">
-        <div id="imagelogin">
+    <div class="login">
+        <div class="imagelogin">
         </div>
-        <div id="formulogin">
+        <div class="formulogin">
                 <form action="login" method="post">
                         <fieldset>
                             <legend>Login</legend>

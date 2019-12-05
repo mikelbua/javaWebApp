@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class LoginController
@@ -30,47 +31,59 @@ public class LoginController extends HttpServlet {
 		String pass = (String)request.getParameter("contrasena");
 		String idioma = (String)request.getParameter("idioma");
 		String recordar = (String)request.getParameter("recuerdame");
+		boolean logok = false;
 		
-		 switch(idioma) 
+		
+		if((nombre).equals("admin") && pass.equalsIgnoreCase("admin123")) {
+			//Recuperar(crear) sesion del usuario.
+			HttpSession session = request.getSession();
+			session.setAttribute("usuarioLogeado", nombre);
+			session.setAttribute("idioma", idioma);
+			session.setMaxInactiveInterval(60*5);
+			
+			logok=true;
+		}
+		
+		 switch(idioma)
 	        { 
 	            case "es": 
-	            	if((nombre).equals("admin") && pass.equalsIgnoreCase("admin123"))
+	            	if(logok)
 	        		{
 	        			if(recordar!=null) {
 	        				request.setAttribute("mensaje", "RECORDAR!! te recordaremos!");
-	        				request.getRequestDispatcher("login-exito.jsp").forward(request, response);
+	        				request.getRequestDispatcher("Ejemplos/jsp/login-exito.jsp").forward(request, response);
 	        			}
 	        		}
 	        		else {
 	        			
 	        			request.setAttribute("mensaje", "Error!! ese no es el usuario o contraseña Administrador!");
-	        			request.getRequestDispatcher("login.jsp").forward(request, response);
+	        			request.getRequestDispatcher("Ejemplos/jsp/login.jsp").forward(request, response);
 	        		}
 	                break; 
 	            case "eus": 
-	            	if((nombre).equals("admin") && pass.equalsIgnoreCase("admin123"))
+	            	if(logok)
 	        		{
 	        			if(recordar!=null) {
 	        				request.setAttribute("mensaje", "GOGORATU!! gogoratuko zaitugu!");
-	        				request.getRequestDispatcher("login-exito.jsp").forward(request, response);
+	        				request.getRequestDispatcher("Ejemplos/jsp/login-exito.jsp").forward(request, response);
 	        			}
 	        		}
 	        		else {
 	        			request.setAttribute("mensaje", "Error!! Hori ez da administratzailearen kontua!");
-	        			request.getRequestDispatcher("login.jsp").forward(request, response);
+	        			request.getRequestDispatcher("Ejemplos/jsp/login.jsp").forward(request, response);
 	        		}
 	                break; 
 	            case "en": 
-	            	if((nombre).equals("admin") && pass.equalsIgnoreCase("admin123"))
+	            	if(logok)
 	        		{
 	        			if(recordar!=null) {
 	        				request.setAttribute("mensaje", "REMEMBER!! I going to remenber your acount!");
-	        				request.getRequestDispatcher("login-exito.jsp").forward(request, response);
+	        				request.getRequestDispatcher("Ejemplos/jsp/login-exito.jsp").forward(request, response);
 	        			}
 	        		}
 	        		else {
 	        			request.setAttribute("mensaje", "Error!! That's not the administrator account.");
-	        			request.getRequestDispatcher("login.jsp").forward(request, response);
+	        			request.getRequestDispatcher("Ejemplos/jsp/login.jsp").forward(request, response);
 	        		}
 	                break; 
 	                
