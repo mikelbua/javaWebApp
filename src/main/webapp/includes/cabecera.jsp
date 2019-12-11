@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+
 <!--Si el doctype es corto y simple esto significa que es HTML5-->
 <html lang="es">
 	<head>
@@ -8,7 +11,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
+		<base href="${pageContext.request.contextPath}/" />
 		<!--  -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 		
@@ -25,19 +28,22 @@
     		String usuario = (String)session.getAttribute("usuarioLogeado");
     		String idioma = (String)session.getAttribute("idioma");    	
     		
-    		if ( usuario == null ){
+    		if ( usuario == null ) {
     			
     			%>
-    				<p><a href="Ejemplos/jsp/login.jsp">inicio session</a></p>
+    				<p style="display: inline;"><a href="Ejemplos/jsp/login.jsp">inicio sesion</a></p>
     			    			
     			<%
-    		}else{
+    		} else {
     			%>  
-	    				<p style="display: inline;" >Usuario: <%=usuario%></p>
-	    				<p style="display: inline;">Tu idioma es: <%=idioma%></p>	
-	    				<p style="display: inline;"><a href="logout">Cerrar Sesssion</a></p>	
-    				
+    				<p style="display: inline;"><a href="logout">Cerrar Sesion</a></p>
+	    			<p style="display: inline;" >Usuario: <%=usuario%></p>
+	    			<p style="display: inline;">Tu idioma es: <%=idioma%></p>
     			<%
     		}
     	%>
+    	
+    	<p style="display: inline;">Usuarios Conectados ${applicationScope.numeroUsuariosConectados}</p>
+    	<a href="index.jsp" style="color: orange;">Home</a>
+    	
 	</section>

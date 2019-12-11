@@ -12,4 +12,4 @@
 	<p style="color:red;"> <%=error%></p>
 <%}%>
 	
-	<a href="Ejemplos/jsp/login.jsp">Volver</a>
+	<a href="/helloweb/Ejemplos/jsp/login.jsp">Volver</a>

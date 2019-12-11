@@ -1,17 +1,7 @@
 <%String titulo = "Login";%>
 <%@ include file="/includes/cabecera.jsp" %>
 
-<%
-//recibir datos del controlador(CalculadoraController.java),puedeen ser del tipo que sea.
-	String error = (String)request.getAttribute("mensaje");
-	
-	if(error!=null){
-%>
-	<p style="color:red;"> <%=error%></p>
-<%} %>
 
-
-<a href="index.jsp">Volver</a>
 <h1>Login</h1>
 
 
@@ -44,15 +34,17 @@
                 width: 50%;
                 height: 100%;
                 font-family: monospace;
+                position: relative;
             }
             fieldset {
                 padding: 20px;
             }
             form {
                 height: 100%;
-                box-sizing: border-box;
-                padding: 70px 20px 0;
-                border:none;
+			    box-sizing: border-box;
+			    border: none;
+			    position: absolute;
+			    top: 45px;
             }
 				
             .botonenviar {
@@ -111,6 +103,14 @@
         <div class="imagelogin">
         </div>
         <div class="formulogin">
+        <%
+			//recibir datos del controlador(CalculadoraController.java),puedeen ser del tipo que sea.
+			String error = (String)request.getAttribute("mensaje");
+			
+        	if(error!=null){
+			%>
+				<p style="color:red;"> <%=error%></p>
+			<%} %>
                 <form action="login" method="post">
                         <fieldset>
                             <legend>Login</legend>
@@ -125,8 +125,8 @@
                                 id="usuario"
                                 autofocus="autofocus"
                                 required="required"
-                                pattern=".{2,10}"
-                                placeholder="minimo 3 y 10 max">
+                                pattern=".{2,20}"
+                                placeholder="minimo 3 y 20 max">
                             
                                 <br><br>
                             <!--
@@ -138,8 +138,8 @@
                                 name="contrasena"
                                 id="contrasena"
                                 required="required"
-                                pattern=".{6,10}"
-                                placeholder="minimo 6 y 10 max"> <br>
+                                pattern=".{6,20}"
+                                placeholder="minimo 6 y 20 max"> <br>
                                 <i class="fas fa-eye"></i>
                                    
                         <br>

@@ -1,28 +1,25 @@
 package com.ipartek.formacion.controller;
 
 import java.io.IOException;
-import java.net.URLEncoder;
-
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class LogoutController
+ * Servlet implementation class BackofficeHomeController
  */
-@WebServlet("/logout")
-public class LogoutController extends HttpServlet {
+@WebServlet( {"/private/home", "/private/home/" })
+public class BackofficeHomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request, response);
+		doPost(request,response);
 	}
 
 	/**
@@ -30,20 +27,10 @@ public class LogoutController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		HttpSession session = request.getSession();
+		request.setAttribute("atributoDesdeServelet", "Soy el atributo desde el Servlet");
 		
-		session.removeAttribute("usuarioLogeado");
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
-		session.invalidate();
-		session = null;
-		
-		
-		//request.getRequestDispatcher("index.jsp").forward(request, response);
-		
-		String mensaje = "gracias por visitarnos";
-		String base = request.getContextPath();
-		response.sendRedirect( base + "/login.jsp?mensaje=" + URLEncoder.encode(mensaje, "UTF-8") );
-
 	}
 
 }

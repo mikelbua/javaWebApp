@@ -114,36 +114,31 @@ nav {
 	font-weight: bold;
 	max-width: 1024px;
 	margin: auto;
+	display: flex;
+    flex-wrap: wrap;
 	font-family: 'Quicksand', sans-serif;
 }
 
 .nav-wraper {
 	background-image: url("/helloweb/images/menuEnlacesfondo.jpg");
-	position: fixed;
 	top: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	/* left: 0; */
+	padding: 10px 0;
 	width: 100%;
 	position: sticky;
 	z-index: 999;
 }
 
 nav a {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 0;
-	margin-right: 0;
-	padding: 10px;
-	color: #FF9600;
-	font-size: 20px;
 	max-width: 1024px;
 	margin: auto;
+	padding-right: 10px;
+	color: #FF9600;
+	font-size: 20px;
 	text-decoration: none;
 }
 
 nav a:hover {
-	font-size: 23px;
+	color: #ffeb00;
 }
 
 footer {

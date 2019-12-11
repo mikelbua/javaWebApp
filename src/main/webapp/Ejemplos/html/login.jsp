@@ -29,6 +29,7 @@
                 display: inline;
                 background-size: cover;
             }
+            
             #login {
                 width: 850px;
                 height: 400px;
@@ -41,19 +42,23 @@
                 transition-duration: 1s;
 
             }
+            
             #login:hover{
                 opacity: 100%;
 
             }
+            
             #fomulogin {
                 background-color: blanchedalmond;
                 width: 50%;
                 height: 100%;
                 font-family: monospace;
             }
+            
             fieldset {
                 padding: 20px;
             }
+            
             form {
                 height: 100%;
                 box-sizing: border-box;
@@ -76,10 +81,12 @@
                 text-decoration: none;
                 text-shadow: 0 1px 0 #ebdb63;
             }
+            
             .botonenviar:hover {
                 background: linear-gradient(to bottom, #f5cc8b 5%, #ffef85 100%);
                 background-color: #f5cc8b;
             }
+            
             .botonenviar:active {
                 position: relative;
                 top: 1px;
@@ -98,6 +105,7 @@
                 box-shadow: 0 0 5px rgba(66,66,66,.75);
                 text-shadow: 0 0 5px rgba(66,66,66,.0);
             }
+            
             input[type="password"] {
                 width: 110px;
                 padding: 5px;
@@ -111,6 +119,7 @@
                 box-shadow: 0 0 5px rgba(66,66,66,.75);
                 text-shadow: 0 0 5px rgba(66,66,66,.0);
             }
+            
         </style>
 
 
