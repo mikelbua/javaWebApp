@@ -16,6 +16,18 @@
 main {
 	background-color: #006E5F;
 }
+
+.imagenicono {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 95px;
+    left: 1020px;
+}
+
+.footer-wraper {
+    min-height: 90px;
+}
 </style>
 <table id="ipartek" class="tabla border">
 	<caption>

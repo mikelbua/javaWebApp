@@ -15,20 +15,18 @@
 <style>
 main {
 	background-color: #006E5F;
+	    min-height: 252px;
 }
+
+
 </style>
 
 <p>Estoy en el Backkoffice</p>
-<p style="color:red">Solo pueden acceder usuarios logeados</p>
+<p style="color: #FF9800">ha esta pagima solo pueden acceder usuarios logeados</p>
 <p>atributo desde servlet => ${atributoDesdeServelet}</p>
 
 
-<span>
-	<a href="#top">
-		<img class="imagenicono" src="/helloweb/images/arrowTopBlack.png"
-			alt="icono top">
-	</a>
-</span>
+
 
 <!-- table#ipartek.tabla_border>tr*9>td*2 :Esto crera una tabla con el
             ID="ipartek" y de la class="tabla_border" de 9 filas y 2 columnas-->

@@ -10,6 +10,8 @@
 		    <a href="Ejemplos/html/posicionamiento.jsp">Posicionamiento</a>
 		    <a href="Ejemplos/css/flexBox.jsp">FlexBox</a>
 		    <a href="Ejemplos/html/formularios.jsp">Formularios</a>
+		    <a href="Ejemplos/jsp/formuCheck.jsp">FormularioCheckbox</a>
+		    <a href="Ejemplos/jsp/formulario-deportes.jsp">FormularioDeportes</a>
 		    <a href="https://caniuse.com/">caniuse.com</a>
 		    <a href="Ejemplos/js/game.jsp">ArkanoidGame</a>
 		    <a href="Ejemplos/jsp/calculadora.jsp">Calculadora</a>

@@ -42,7 +42,7 @@ public class LogoutController extends HttpServlet {
 		
 		String mensaje = "gracias por visitarnos";
 		String base = request.getContextPath();
-		response.sendRedirect( base + "/login.jsp?mensaje=" + URLEncoder.encode(mensaje, "UTF-8") );
+		response.sendRedirect( base + "/Ejemplos/jsp/login.jsp?mensaje=" + URLEncoder.encode(mensaje, "UTF-8") );
 
 	}
 

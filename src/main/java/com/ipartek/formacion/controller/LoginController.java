@@ -107,10 +107,10 @@ public class LoginController extends HttpServlet {
 			            default: 
 			                break;
 			        }
-			}//if
+			}else {
 			
-			request.setAttribute("mensaje", "Acceso denegado!!");
-			request.getRequestDispatcher("Ejemplos/jsp/login.jsp").forward(request, response);
-		 	
+				request.setAttribute("mensaje", "Acceso denegado!!");
+				request.getRequestDispatcher("Ejemplos/jsp/login.jsp").forward(request, response);
+			}
 	}
 }
