@@ -9,7 +9,7 @@
 	<br>
 	<br>
 	<br>
-	<br>
+	<br>  
 </div>
 <%@ include file="/includes/navegacion.jsp"%>
 <style>
